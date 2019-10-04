@@ -10,7 +10,7 @@ function App() {
 
 return (
   <div className="App">
- <Card fluid color='red'>
+ <Card fluid color='red' data-testid="card">
 <Dashboard/>
 </Card>
 </div>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Display from "./Display";
-import {Button, Segment, Divider} from 'semantic-ui-react';
+import {Button} from 'semantic-ui-react';
 
 function Dashboard() {
   const [balls, setBalls] = useState(0);
@@ -43,13 +43,13 @@ function Dashboard() {
    <Display balls={balls} strikes={strikes} />
    </div>
    <div>
-   <div class="ui hidden divider"></div>
+   <div className="ui hidden divider"></div>
   <Button onClick={updateStrikes} > Strike </Button>
   <Button onClick={updateBalls} > Ball </Button>
   <Button onClick={updateFouls} > Foul </Button>
   <Button onClick={updateHits} > Hit </Button>
-  <div class="ui hidden divider"></div>
-  <div class="ui hidden divider"></div>
+  <div className="ui hidden divider"></div>
+  <div className="ui hidden divider"></div>
   </div>
   </div>
    
